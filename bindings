@@ -2,10 +2,13 @@
 
 # Register a ConnectionFactory in JNDI using the form:
 # connectionfactory.[jndi_name] = [ConnectionURL]
-connectionfactory.SBCF = amqps://ibmmqdemo.servicebus.windows.net
+# Place your connection factory below based on the nsame of your Service Bus Namespace Hostname, prefixed as below with 'amqps'
+# connectionfactory.SBCF = amqps://ibmmqdemo.servicebus.windows.net
 
 # Register some queues in JNDI using the form
 # queue.[jndi_name] = [physical_name]
 # topic.[jndi_name] = [physical_name]
-queue.QUEUE = frommq
+
+# Enter your destination name alias (queue.<alias> = <actual Service Bus queue name>
+# queue.QUEUE = frommq
 
