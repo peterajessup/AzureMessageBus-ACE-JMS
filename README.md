@@ -12,6 +12,6 @@ Note that in the JMS node the provider name is a combination of the policy folde
 <BR>
 I also created a compute node to set the destination as the JMS node seemed not to be reading the destination from the node properties correctly.
 
-You will aslo have to create credentials based on the Connection factory name and the access key name and value - something like as below, shown for a connection factory name of 'SBCF'
+You will aslo have to create credentials based on the Connection factory name and an Azure Service Bus access key name and value - something like as below, shown for a connection factory name of 'SBCF'
 <BR>
 mqsisetdbparms" -w <workdir> -n jms::SBCF -u <keyName> -p <keyValue>
